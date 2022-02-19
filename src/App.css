@@ -1,38 +1,214 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;900&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+ 
 .App {
+
+}
+
+body {
+  font-family: 'Outfit', sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  background: linear-gradient(to right, #7a7b80, #ffffff);
   text-align: center;
+  line-height: 1.5;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+h1 {
+  background: linear-gradient(rgb(60, 221, 60), blue);
+  -webkit-background-clip: text;
+  color: transparent;
+  margin-bottom: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+h3 {
+  /* margin-bottom: 0px; */
+  margin: 20px 20px 5px 20px;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+img {
+  padding: 0;
+  width: 140px;
+  height: 140px;
+  border-radius: 50%;
+}
+
+.gradient {
+  height: 150px;
+  width: 150px;
+  padding: 1rem;
+  position: relative;
+  background: linear-gradient(to bottom right, rgb(60, 221, 60), blue);
+  padding: 5px;
+  border-radius: 50%;
+  box-shadow: black 0px 1px 4px 1px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+a {
+  color: black;
+}
+
+ul, ol, p {
+  text-align: start;
+}
+
+#projects ul {
+  margin-bottom: 20px;
+}
+
+#homepage {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+nav {
+  position: fixed;
+  left: 30px;
+  border-left: black solid 2px;
+  padding-left: 10px;
+  padding-bottom: 0;
+  height: 250px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+nav > ul {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  height: inherit;
+}
+
+.nav-item, .nav-item a {
+  text-decoration: none;
+  list-style: none;
+  transition: all 300ms ease-out;
+  font-weight: 600;
+}
+
+.nav-item:hover {
+  transform: translateX(10px);
+}
+
+.nav-item a:hover {
+  background: linear-gradient(rgb(47, 170, 47), blue);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.content {
+  width: 70%;
+  border: 1px solid black;
+  border-radius: 10px;
+  list-style-position: inside;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+  box-shadow: black 0px 2px 5px 1px;
+  padding: 2% 15% 2% 15%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+
+#icons {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  width: 100%;
+  /* border: 1px saddlebrown solid */
+}
+
+i {
+  font-size: 48px;
+  transition: all 300ms ease-out;
+}
+
+i:hover {
+  transform: translateY(-10px);
+  background: linear-gradient(rgb(60, 221, 60), blue);
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+footer {
+  background-color: black;
+  color: #a7a9ad;
+  height: 80px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 40px;
+  padding: 20px;
+  border-radius: 10px;
+  width: 70%;
+}
+
+@media only screen and (max-width: 1100px) {
+  nav {
+    position: fixed;
+    top: 0;
+    left: auto;
+    border-left: none;
+    padding: 0;
+    height: auto;
+    width: 100%;
+    /* border: 1px solid blue; */
+    /* background: linear-gradient(to right, #7a7b80, #ffffff); */
+    backdrop-filter: blur(30px);
   }
-  to {
-    transform: rotate(360deg);
+
+  nav > ul {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-evenly;
+    height: auto;
+    /* border: 1px solid black; */
+    padding: 20px;
+  }
+
+  .nav-item:hover {
+    transform: translateY(5px);
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  nav {
+    font-size: 12px;
+  }
+  
+  ul, ol, p {
+    font-size: 12px;
+  }
+
+  h1, h2 {
+    font-size: 24px;
+  }
+
+  i {
+    font-size: 36px;
+  }
+}
+
+@media only screen and (max-height: 450px) {
+  nav > ul {
+    padding: 5px;
+  }
+
+  .nav-item:hover {
+    transform: translateY(2px);
   }
 }

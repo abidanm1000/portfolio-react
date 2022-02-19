@@ -54,7 +54,7 @@ export default function Main() {
             <h3>Other things I want to do:</h3>
             <ul>
                 <li>FPV Drone Racing</li>
-                <li>Boxing / Karate Lessons</li>
+                <li>Boxing / Karate</li>
                 <li>Paintball</li>
                 <li>Car Mods / Tuning</li>
                 <li>Oculus VR</li>

@@ -10,7 +10,7 @@ export default function Main() {
             <li ><a href="https://hungry-pike-2dfe9a.netlify.app/" target="_blank">Tip Calculator</a></li>
             <li ><a href="https://abidanm1000.github.io/" target="_blank">First Portfolio</a></li>
             <li ><a href="https://sad-wing-32775a.netlify.app/" target="_blank">BeatboxJS</a></li>
-            <li ><a href="https://htmlpreview.github.io/?https://github.com/abidanm1000/Red-Bull/blob/main/index.html" target="_blank">Red Bull</a></li>
+            <li ><a href="https://flamboyant-thompson-17ed22.netlify.app/" target="_blank">Red Bull</a></li>
             <li ><a href="https://github.com/abidanm1000/CryptoPunks" target="_blank">Crypto Punks</a></li>
             </ul>
             <a href="https://github.com/abidanm1000" target="_blank"><b>more on github</b></a>

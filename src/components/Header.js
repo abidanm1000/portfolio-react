@@ -9,7 +9,9 @@ function toggle() {
   }
 }
 
-export default function Header() {
+
+
+export default function Header({switchTheme,switchIcon, theme}) {
   return (
     <div id="homepage">
         <p>hello, i'm</p>
@@ -19,30 +21,33 @@ export default function Header() {
         <h1>abi</h1>
         <nav>
             <ul>
-                <li className='nav-item'><a href='#homepage'>Home</a></li>
-                <li className='nav-item'><a href='#projects'>Projects</a></li>
-                <li className='nav-item'><a href='#about'>About</a></li>
-                <li className='nav-item'><a href='#experience'>Experience</a></li>
-                <li className='nav-item'><a href='#hobbies'>Hobbies</a></li>
-                <li className='nav-item'><a href='#contact'>Contact</a></li>
-                <li className='nav-item'><a href="./resume.pdf" target="_blank">Resume</a></li>
+                <li className='nav-item'><img src={switchIcon} id='darkmode-switch' onClick={switchTheme}/></li>
+                <li className='nav-item'><a href='#homepage' className={`${theme}`}>Home</a></li>
+                <li className='nav-item'><a href='#projects' className={`${theme}`}>Projects</a></li>
+                <li className='nav-item'><a href='#about' className={`${theme}`}>About</a></li>
+                <li className='nav-item'><a href='#experience' className={`${theme}`}>Experience</a></li>
+                <li className='nav-item'><a href='#hobbies' className={`${theme}`}>Hobbies</a></li>
+                <li className='nav-item'><a href='#contact' className={`${theme}`}>Contact</a></li>
+                <li className='nav-item'><a href="./resume.pdf" target="_blank" className={`${theme}`}>Resume</a></li>
             </ul>
         </nav>
         <div class="topnav">
       
             <div id="myLinks">
-              <a href='#homepage'>Home</a>  
-              <a href='#projects'>Projects</a>
-              <a href='#about'>About</a>
-              <a href='#experience'>Experience</a>
-              <a href='#hobbies'>Hobbies</a>
-              <a href='#contact'>Contact</a>
-              <a href="./resume.pdf" target="_blank">Resume</a>
+              <a href='#homepage' className={`${theme}`}>Home</a>  
+              <a href='#projects' className={`${theme}`}>Projects</a>
+              <a href='#about' className={`${theme}`}>About</a>
+              <a href='#experience' className={`${theme}`}>Experience</a>
+              <a href='#hobbies' className={`${theme}`}>Hobbies</a>
+              <a href='#contact' className={`${theme}`}>Contact</a>
+              <a href="./resume.pdf" target="_blank" className={`${theme}`}>Resume</a>
             </div>
             
-            <a className="icon" onClick={toggle}>
+            <a className={`icon ${theme}`} onClick={toggle}>
               <i class="fa fa-bars"></i>
             </a>
+            <br></br>
+            <img src={switchIcon} id='darkmode-switch' onClick={switchTheme}/>
           </div>
     </div>
   )

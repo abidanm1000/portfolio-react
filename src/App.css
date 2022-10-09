@@ -8,16 +8,16 @@
 }
  
 .App {
-
-}
-
-body {
   font-family: 'Outfit', sans-serif;
   text-transform: uppercase;
   text-decoration: none;
   background: linear-gradient(to right, #7a7b80, #ffffff);
   text-align: center;
   line-height: 1.5;
+}
+
+body {
+  
 }
 
 h1 {
@@ -126,6 +126,10 @@ nav > ul {
   padding-right: 15%;
 }
 
+#hobbies ul {
+  list-style: none;
+}
+
 #icons {
   display: flex;
   flex-flow: row nowrap;
@@ -146,6 +150,25 @@ nav > ul {
   color: transparent;
 }
 
+#darkmode-switch {
+  height: 25px;
+  width: 25px;
+  cursor: pointer;
+  background-color: black;
+  padding: 3px;
+}
+
+.App.dark {
+  background: linear-gradient(to left, #080808, #292b2c);
+  color: white;
+}
+
+a.dark {
+  color: white;
+}
+
+
+
 footer {
   background-color: black;
   color: #a7a9ad;
@@ -155,7 +178,7 @@ footer {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-bottom: 40px;
+  /* margin-bottom: 40px; */
   padding: 20px;
   border-radius: 10px;
   width: 70%;
@@ -241,6 +264,10 @@ footer {
     font-weight: 600;
     /* border: 2px solid white; */
   }
+
+  .topnav a.dark {
+    color: white;
+  }
   
   /* Style the hamburger menu */
   .topnav a.icon {
@@ -253,6 +280,10 @@ footer {
     backdrop-filter: blur(2px);
     /* border: 2px solid white; */
   }
+
+  .topnav a.icon.dark {
+    color: white;
+  }
   
   /* Add a grey background color on mouse-over */
   .topnav a:hover {
@@ -263,6 +294,13 @@ footer {
 
   .icon {
     cursor: pointer;
+  }
+
+  #darkmode-switch {
+    position: fixed;
+    right: 17px;
+    top: 50px;
+    backdrop-filter: blur(2px);
   }
 }
 

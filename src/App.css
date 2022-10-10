@@ -175,6 +175,7 @@ nav > ul {
 
 .topnav {
   display: none;
+  z-index: 2;
 }
 
 .content {

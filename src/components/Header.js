@@ -31,7 +31,7 @@ export default function Header({switchTheme,switchIcon, theme}) {
                 <li className='nav-item'><a href="./resume.pdf" target="_blank" className={`${theme}`}>Resume</a></li>
             </ul>
         </nav>
-        <div class="topnav">
+        <div className="topnav">
       
             <div id="myLinks">
               <a href='#homepage' className={`${theme}`}>Home</a>  
@@ -44,7 +44,7 @@ export default function Header({switchTheme,switchIcon, theme}) {
             </div>
             
             <a className={`icon ${theme}`} onClick={toggle}>
-              <i class="fa fa-bars"></i>
+              <i className="fa fa-bars"></i>
             </a>
             <br></br>
             <img src={switchIcon} id='darkmode-switch' onClick={switchTheme}/>

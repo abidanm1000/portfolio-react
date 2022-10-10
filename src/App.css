@@ -32,7 +32,7 @@ h3 {
   margin: 20px 20px 5px 20px;
 }
 
-img {
+.gradient img {
   padding: 0;
   width: 140px;
   height: 140px;
@@ -60,8 +60,76 @@ ul, ol, p {
   text-align: start;
 }
 
-#projects ul {
+/* #projects ul {
   margin-bottom: 20px;
+} */
+
+#project-display {
+  /* border: red solid 1px; */
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+#extra-project-display {
+  display: none;
+}
+
+
+#extra-project-display.show {
+  /* border: red solid 1px; */
+  width: 100%;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.project {
+  overflow: hidden;
+  border: #0A0808 solid 2px;
+  border-radius: 7px;
+  width: 240px;
+  height: 200px;
+  background-size: cover;
+  backdrop-filter: blur(30px);
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  margin: 10px;
+  cursor: pointer;
+  transition: all 300ms ease;
+}
+
+.project:hover {
+  transform: translateY(-10px);
+  box-shadow: #535151 0px 5px 5px 0px; 
+}
+
+#project-link {
+  text-decoration: none;
+}
+
+.project img {
+  width: 100%;
+  height: auto;
+}
+
+#project-description {
+  height: 25%;
+  background-color: #ada8a8a1;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  backdrop-filter: blur(30px);
+  /* font-weight: 500; */
+}
+
+#down-arrow {
+  font-size: 25px;
+  cursor: pointer;
 }
 
 #homepage {
@@ -150,12 +218,14 @@ nav > ul {
   color: transparent;
 }
 
+/* darkmode section */
 #darkmode-switch {
   height: 25px;
   width: 25px;
   cursor: pointer;
   background-color: black;
   padding: 3px;
+  border-radius: 50%;
 }
 
 .App.dark {

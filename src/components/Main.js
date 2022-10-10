@@ -23,15 +23,7 @@ export default function Main({theme}) {
     <div className="main">
         <div className="content" id='projects'>
             <h1>projects</h1>
-            {/*<ul>
-                <li ><a href="https://dreamy-shaw-f5a38c.netlify.app/" target="_blank" className={`${theme}`}>Profile Card</a></li>
-                <li ><a href="https://hungry-pike-2dfe9a.netlify.app/" target="_blank" className={`${theme}`}>Tip Calculator</a></li>
-                <li ><a href="https://abidanm1000.github.io/" target="_blank" className={`${theme}`}>First Portfolio</a></li>
-                <li ><a href="https://sad-wing-32775a.netlify.app/" target="_blank" className={`${theme}`}>BeatboxJS</a></li>
-                <li ><a href="https://flamboyant-thompson-17ed22.netlify.app/" target="_blank" className={`${theme}`}>Red Bull</a></li>
-                <li ><a href="https://github.com/abidanm1000/CryptoPunks" target="_blank" className={`${theme}`}>Crypto Punks</a></li>
-            </ul>
-            <a href="https://github.com/abidanm1000" target="_blank" className={`${theme}`}><b>more on github</b></a>*/}
+
             <div id='project-display'>
                 {projectList.map( (project, index) => <Project key={index} project={project}/>)}
             </div>
@@ -39,13 +31,13 @@ export default function Main({theme}) {
             <div id='extra-project-display' className={`${display}`}>
                 {extraProjectList.map( (project, index) => <Project key={index} project={project}/>)}
             </div>
-                
-            
             
             <br></br>
             
             <div id='down-arrow' onClick={toggleDisplay}><i className="fa fa-chevron-circle-down"></i></div>
+
             <br></br>
+            
             <a href="https://github.com/abidanm1000" target="_blank" className={`${theme}`}><b>more on github</b></a>
         </div>
         <div className="content" id='about'>
